@@ -1,0 +1,80 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "https://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="8">Command line suite</th></tr>
+<tr><td><a href="#t0">Command line test</a></td><td class="num">9</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">18,394</td><td></td><td></td></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Command line suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Command line test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">ui.VerifyTitleTestAndTextTest</td><td><a href="#m0">titleTest</a></td><td rowspan="1">1645121519962</td><td rowspan="1">5482</td></tr><tr><th colspan="4">Command line test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="5">ui.GroupsDemoTest</td><td><a href="#m1">alogoutTest</a></td><td rowspan="1">1645121507083</td><td rowspan="1">0</td></tr><tr class="passedeven"><td><a href="#m2">bTest1</a></td><td rowspan="1">1645121507083</td><td rowspan="1">0</td></tr><tr class="passedeven"><td><a href="#m3">bTest2</a></td><td rowspan="1">1645121507083</td><td rowspan="1">0</td></tr><tr class="passedeven"><td><a href="#m4">bloginTest</a></td><td rowspan="1">1645121507083</td><td rowspan="1">0</td></tr><tr class="passedeven"><td><a href="#m5">csignupTest</a></td><td rowspan="1">1645121507083</td><td rowspan="1">0</td></tr><tr class="passedodd"><td rowspan="3">ui.LoginTest</td><td><a href="#m6">alogoutTest</a></td><td rowspan="1">1645121507099</td><td rowspan="1">0</td></tr><tr class="passedodd"><td><a href="#m7">bloginTest</a></td><td rowspan="1">1645121507099</td><td rowspan="1">0</td></tr><tr class="passedodd"><td><a href="#m8">csignupTest</a></td><td rowspan="1">1645121507099</td><td rowspan="1">0</td></tr><tr class="passedeven"><td rowspan="1">ui.VerifyTitleTest</td><td><a href="#m9">titleTest</a></td><td rowspan="1">1645121507099</td><td rowspan="1">12863</td></tr></tbody>
+</table>
+<h2>Command line test</h2><h3 id="m0">ui.VerifyTitleTestAndTextTest#titleTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.WebDriverException: unknown error: Chrome failed to start: exited normally.
+  (chrome not reachable)
+  (The process started from chrome location C:\Program Files (x86)\Google\Chrome\Application\chrome.exe is no longer running, so ChromeDriver is assuming that Chrome has crashed.)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;SUPTO&apos;, ip: &apos;192.168.1.4&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_111&apos;
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+	Ordinal0 [0x003C7AC3+2587331]
+	Ordinal0 [0x0035ADD1+2141649]
+	Ordinal0 [0x00253BB8+1063864]
+	Ordinal0 [0x002706E5+1181413]
+	Ordinal0 [0x0026CC51+1166417]
+	Ordinal0 [0x0029D12F+1364271]
+	Ordinal0 [0x0029CD5A+1363290]
+	Ordinal0 [0x002984A6+1344678]
+	Ordinal0 [0x002753F6+1201142]
+	Ordinal0 [0x002762E6+1204966]
+	GetHandleVerifier [0x0056DF22+1680738]
+	GetHandleVerifier [0x00620DBC+2413564]
+	GetHandleVerifier [0x0045D151+563089]
+	GetHandleVerifier [0x0045BF13+558419]
+	Ordinal0 [0x0036081E+2164766]
+	Ordinal0 [0x00365508+2184456]
+	Ordinal0 [0x00365650+2184784]
+	Ordinal0 [0x0036F5BC+2225596]
+	BaseThreadInitThunk [0x76696739+25]
+	RtlGetFullPathName_UEx [0x770A8E7F+1215]
+	RtlGetFullPathName_UEx [0x770A8E4D+1165]
+
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
+	at java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:126)
+	at java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:498)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:485)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471)
+	at java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:152)
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:464)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:181)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:168)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
+	at ui.VerifyTitleTestAndTextTest.titleTest(VerifyTitleTestAndTextTest.java:28)
+	at java.util.ArrayList.forEach(ArrayList.java:1249)
+... Removed 41 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">ui.GroupsDemoTest#alogoutTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">ui.GroupsDemoTest#bTest1</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">ui.GroupsDemoTest#bTest2</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">ui.GroupsDemoTest#bloginTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">ui.GroupsDemoTest#csignupTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">ui.LoginTest#alogoutTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">ui.LoginTest#bloginTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">ui.LoginTest#csignupTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">ui.VerifyTitleTest#titleTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>
